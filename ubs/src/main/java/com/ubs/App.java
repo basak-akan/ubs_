@@ -1,6 +1,9 @@
 package com.ubs;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import com.mysql.cj.xdevapi.Statement;
 
@@ -31,15 +34,15 @@ public class App extends Application  {
 
     public static void main( String[] args ) throws SQLException
     {
-    	launch(args);
+    	
     	
 //    	 try {
-//             Class.forName("com.mysql.jdbc.Driver");
+//             Class.forName("com.mysql.cj.jdbc.Driver");
 //             Connection con = DriverManager.getConnection(
 //                     "jdbc:mysql://160.153.128.35:3306/UbsProject", "thehavays", "ubs12345");
 // //here sonoo is database name, root is username and password
-//             Statement stmt = con.createStatement();
-//             ResultSet rs = stmt.executeQuery("select * from Persons");
+//             Statement stmt =  (Statement) con.createStatement();
+//             ResultSet rs = ((java.sql.Statement) stmt).executeQuery("select * from Persons");
 //             while (rs.next())
 //                 System.out.println(rs.getString(1) + "  " + rs.getString(2) + "  " + rs.getString(3) + "  " + rs.getString(4));
 //             con.close();
@@ -47,5 +50,7 @@ public class App extends Application  {
 //             System.out.println(e);
 //         }
     
+    	 launch(args);
+    	 
     }
 }

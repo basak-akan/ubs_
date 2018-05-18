@@ -1,8 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
-</AnchorPane>
 
+<AnchorPane prefHeight="465.0" prefWidth="537.0" style="-fx-background-color: #2A363F;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <MenuBar layoutX="-2.0" prefHeight="39.0" prefWidth="545.0" style="-fx-background-color: #6ED9A0;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Çalışan">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Ekle" />
+              <MenuItem mnemonicParsing="false" text="Sil" />
+                  <MenuItem mnemonicParsing="false" text="Görüntüle ve Düzenle" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Depo">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Ekle" />
+              <MenuItem mnemonicParsing="false" text="Sil" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Şirketler">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Ekle" />
+              <MenuItem mnemonicParsing="false" text="Sil" />
+                  <MenuItem mnemonicParsing="false" text="Görüntüle ve Düzenle" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Hareket">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Görüntüle" />
+                  <MenuItem mnemonicParsing="false" text="Depolar arası transfer" />
+                  <MenuItem mnemonicParsing="false" text="Son hareket iptal" />
+                  <MenuItem mnemonicParsing="false" text="İade gerçekleştirme" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Raporlama">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Ürün hareket dökümü" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <TableView layoutX="28.0" layoutY="68.0" prefHeight="368.0" prefWidth="486.0">
+        <columns>
+          <TableColumn prefWidth="137.0" text="Ürün İsmi" />
+          <TableColumn minWidth="9.0" prefWidth="132.0" text="Miktarı" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
