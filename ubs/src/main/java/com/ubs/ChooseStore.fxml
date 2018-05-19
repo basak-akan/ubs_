@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
@@ -9,9 +9,20 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="395.0" prefWidth="595.0" style="-fx-background-color: #2A363F;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="387.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <MenuBar prefHeight="45.0" prefWidth="595.0" style="-fx-background-color: #6ED9A0;">
+      <AnchorPane layoutX="-32.0" layoutY="-3.0" prefHeight="460.0" prefWidth="577.0" style="-fx-background-color: #2A363F;">
+         <children>
+            <JFXComboBox layoutX="284.0" layoutY="180.0" prefHeight="31.0" prefWidth="214.0" />
+            <Label layoutX="42.0" layoutY="177.0" prefHeight="38.0" prefWidth="222.0" text="İşlem Yapılacak Depoyu Seçiniz:" textFill="#f5f4f4" />
+            <JFXButton fx:id="btn_open" layoutX="160.0" layoutY="335.0" prefHeight="41.0" prefWidth="248.0" style="-fx-background-color: #6ED9A0;" text="Devam Et" textFill="#fbfcfc">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <MenuBar prefHeight="39.0" prefWidth="545.0" style="-fx-background-color: #6ED9A0;">
          <menus>
             <Menu mnemonicParsing="false" text="Çalışan">
                <items>
@@ -48,22 +59,5 @@
             </Menu>
          </menus>
       </MenuBar>
-      <Label layoutX="42.0" layoutY="129.0" prefHeight="21.0" prefWidth="50.0" text="Ad: " textFill="#f4efef" />
-      <Label layoutX="36.0" layoutY="205.0" prefHeight="21.0" prefWidth="50.0" text="Soyad:" textFill="#f4efef" />
-      <Label layoutX="333.0" layoutY="84.0" text="E-mail: " textFill="#f4efef" />
-      <Label layoutX="329.0" layoutY="205.0" text="Ünvan: " textFill="#f4efef" />
-      <Label layoutX="25.0" layoutY="74.0" text="Kullanıcı Adı:" textFill="#f4efef" />
-      <Label layoutX="329.0" layoutY="139.0" text="Telefon: " textFill="#f4efef" />
-      <JFXTextField layoutX="92.0" layoutY="124.0" />
-      <JFXTextField layoutX="92.0" layoutY="200.0" />
-      <JFXTextField layoutX="395.0" layoutY="79.0" />
-      <JFXTextField layoutX="395.0" layoutY="140.0" />
-      <JFXTextField layoutX="395.0" layoutY="200.0" />
-      <JFXButton fx:id="btn_open" layoutX="194.0" layoutY="300.0" prefHeight="41.0" prefWidth="248.0" style="-fx-background-color: #6ED9A0;" text="Çalışan Ekle" textFill="#fbfcfc">
-         <font>
-            <Font name="System Bold" size="19.0" />
-         </font>
-      </JFXButton>
-      <JFXTextField layoutX="131.0" layoutY="69.0" />
    </children>
 </AnchorPane>
